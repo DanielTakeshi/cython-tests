@@ -2,10 +2,11 @@
 
 Testing cython and python, also with numpy
 
-See:
+These are probably the most relevant references:
 
 - https://cython.readthedocs.io/en/latest/src/quickstart/index.html
 - https://cython.readthedocs.io/en/latest/src/tutorial/profiling_tutorial.html#profiling-tutorial
+- https://cython.readthedocs.io/en/latest/src/tutorial/numpy.html
 - https://github.com/cython/cython/wiki
 
 

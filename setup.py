@@ -8,7 +8,7 @@ from Cython.Build import cythonize
 
 from distutils.core import setup
 
-exts = ['example.pyx', 'example_py_cy.py', 'calc_pi.pyx']
+exts = ['example.pyx', 'example_py_cy.py', 'calc_pi.pyx', 'convolve1.pyx']
 
 setup(
     ext_modules=cythonize(exts, annotate=True),

@@ -9,7 +9,7 @@ from example_py_cy import primes_python_compiled
 from example       import primes
 
 
-def test(n):
+def test_primes(n):
     """With n=10k, I get:
 
         (py2-cython-tests) Daniels-MBP-6:cython-tests danielseita$ python tests.py
@@ -45,6 +45,42 @@ def test(n):
     print("cythonized compiled: {:.3f}".format(time.time()-tic))
 
 
+import numpy as np
+import convolve_py
+import convolve1
+
+
+def test_convs():
+    res0 = convolve_py.naive_convolve(
+            np.array([[1, 1, 1]], dtype=np.int),
+            np.array([[1],[2],[1]], dtype=np.int)
+    )
+    res1 = convolve1.naive_convolve(
+            np.array([[1, 1, 1]], dtype=np.int),
+            np.array([[1],[2],[1]], dtype=np.int)
+    )
+    #print(res0)
+    #print(res1)
+
+    N = 100
+    f = np.arange(N*N, dtype=np.int).reshape((N,N))
+    g = np.arange(81, dtype=np.int).reshape((9, 9))
+
+    tic = time.time()
+    convolve_py.naive_convolve(f, g)
+    toc = time.time()
+    print("naive:  {:.3f} s".format(toc - tic))
+
+    tic = time.time()
+    convolve1.naive_convolve(f, g)
+    toc = time.time()
+    print("cython: {:.3f} s".format(toc - tic))
+
+
 if __name__ == "__main__":
-    n=10000
-    test(n)
+    # test the primes python code
+    #n=10000
+    #test_primes(n)
+
+    # test the convolution code
+    test_convs()
