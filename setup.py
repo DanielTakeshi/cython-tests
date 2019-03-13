@@ -8,8 +8,10 @@ from Cython.Build import cythonize
 
 from distutils.core import setup
 
+exts = ['example.pyx', 'example_py_cy.py', 'calc_pi.pyx']
+
 setup(
-    ext_modules=cythonize(['example.pyx', 'example_py_cy.py'], annotate=True),
+    ext_modules=cythonize(exts, annotate=True),
 )
 
 
