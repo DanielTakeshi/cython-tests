@@ -2,7 +2,10 @@
 
 Testing cython and python, also with numpy
 
-See:  https://cython.readthedocs.io/en/latest/src/quickstart/index.html
+See:
+
+- https://cython.readthedocs.io/en/latest/src/quickstart/index.html
+- https://github.com/cython/cython/wiki
 
 
 ## Installation and Steps to Reproduce
@@ -46,3 +49,12 @@ Installing collected packages: numpy
 Successfully installed numpy-1.16.2
 (py2-cython-tests) Daniels-MBP-6:~ danielseita$
 ```
+
+
+## Other Helpful Resources
+
+(Besides the official documentation, obviously.)
+
+- https://stackoverflow.com/questions/2697275/cython-speed-boost-vs-usability
+- https://stackoverflow.com/questions/22936413/why-there-is-a-huge-performance-difference-between-these-two-codes-in-python-and?
+- https://stackoverflow.com/questions/44875043/attempting-to-build-a-cython-extension-to-a-python-package-not-creating-shared
