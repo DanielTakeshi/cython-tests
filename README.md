@@ -5,6 +5,7 @@ Testing cython and python, also with numpy
 See:
 
 - https://cython.readthedocs.io/en/latest/src/quickstart/index.html
+- https://cython.readthedocs.io/en/latest/src/tutorial/profiling_tutorial.html#profiling-tutorial
 - https://github.com/cython/cython/wiki
 
 

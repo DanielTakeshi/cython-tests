@@ -4,6 +4,7 @@
 *.c
 *.pyc
 *.html
+*.prof
 build/
 dist/
 *egg-info/
